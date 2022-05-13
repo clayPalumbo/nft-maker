@@ -1,7 +1,7 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-    const MyNFT = await ethers.getContractFactory("JoshNFT");
+    const MyNFT = await ethers.getContractFactory("CameronNFT");
     
     // Start deployment, returning a promise that resolves to a contract object
     const myNFT = await MyNFT.deploy();

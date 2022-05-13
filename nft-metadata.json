@@ -1,9 +1,9 @@
 {
     "attributes" : [ {
-      "trait_type" : "hair",
-      "value" : "red"
+      "trait_type" : "weight",
+      "value" : "Unknown"
     }],
-    "description" : "The one no one wants to be",
-    "image" : "https://gateway.pinata.cloud/ipfs/QmTUi4LS7HBYVUrVHa8SfiXukx3CGFgmQJfRtPtAVKUbQm",
-    "name" : "Jake Radey"
+    "description" : "This is fake josh at walmart",
+    "image" : "https://gateway.pinata.cloud/ipfs/QmPAjpWvS88MDX2czp6ez15rmCJ2iFvL3rs7DfyZTmWgZw",
+    "name" : "Altier's first form"
 }

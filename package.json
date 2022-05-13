@@ -1,7 +1,7 @@
 {
-  "name": "my-nft",
+  "name": "nft-maker",
   "version": "1.0.0",
-  "description": "an nft",
+  "description": "an nft maker",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,11 +11,11 @@
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "ethers": "^5.1.0",
-    "hardhat": "^2.1.2"
+    "hardhat": "^2.6.8"
   },
   "dependencies": {
-    "@alch/alchemy-web3": "^1.0.2",
-    "@openzeppelin/contracts": "^3.1.0-solc-0.7",
-    "dotenv": "^8.2.0"
+    "@alch/alchemy-web3": "^1.1.8",
+    "@openzeppelin/contracts": "^3.4.2",
+    "dotenv": "^8.6.0"
   }
 }

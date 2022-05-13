@@ -6,15 +6,14 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract JoshNFT is ERC721, Ownable {
+contract CameronNFT is ERC721 {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    constructor() public ERC721("JoshNFT", "NFT") {}
+    constructor() public ERC721("CameronNFT", "NFT") {}
 
     function mintNFT(address recipient, string memory tokenURI)
         public
-        onlyOwner
         returns (uint256)
     {
         _tokenIds.increment();

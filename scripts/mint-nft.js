@@ -1,12 +1,12 @@
 require('dotenv').config();
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const API_URL = process.env.API_URL;
-const PUBLIC_KEY = process.env.PUBLIC_KEY;
+const PUBLIC_KEY = process.env.RECIEVER_KEY;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const web3 = createAlchemyWeb3(API_URL);
 
-const contract = require("../artifacts/contracts/MyNFT.sol/JoshNFT.json"); 
-const contractAddress = "0xf3b47f8cf1b27a0f27b9cf81c642f14d2524c204";
+const contract = require("../artifacts/contracts/MyNFT.sol/CameronNFT.json"); 
+const contractAddress = "0x764d35453FBFCDe3cE7275f62897e1577657168C";
 const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
 
 async function mintNFT(tokenURI, reciever) {
@@ -37,4 +37,4 @@ async function mintNFT(tokenURI, reciever) {
     });
   }
 
-  mintNFT("https://gateway.pinata.cloud/ipfs/Qmb8DQt6DwDmyMZyD8uha775KAw2KyAuBZcVPcu3S6NxZ8", contractAddress);
+  mintNFT("https://gateway.pinata.cloud/ipfs/QmPAjpWvS88MDX2czp6ez15rmCJ2iFvL3rs7DfyZTmWgZw", contractAddress);
