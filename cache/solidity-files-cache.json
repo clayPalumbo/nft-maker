@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/claypalumbo/git/nft-maker/contracts/MyNFT.sol": {
-      "lastModificationDate": 1637102238264,
-      "contentHash": "fd121462f7ef5636ffe58c74cd266d16",
+    "/Users/claypalumbo/git/Apps/nft-maker/contracts/MyNFT.sol": {
+      "lastModificationDate": 1652752866899,
+      "contentHash": "e1d7e645c63bbffcc144154861a942e8",
       "sourceName": "contracts/MyNFT.sol",
       "solcConfig": {
         "version": "0.7.3",
@@ -37,11 +37,11 @@
         "^0.7.3"
       ],
       "artifacts": [
-        "CameronNFT"
+        "NewNFT"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
-      "lastModificationDate": 1637096431907,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1652751959922,
       "contentHash": "2d9804eb2b6f41ea0a65115e154d90eb",
       "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
       "solcConfig": {
@@ -87,8 +87,8 @@
         "ERC721"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
-      "lastModificationDate": 1637096431885,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
+      "lastModificationDate": 1652751956041,
       "contentHash": "304a56eb1322144704fb39f8c7e6d722",
       "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
       "solcConfig": {
@@ -124,8 +124,8 @@
         "Counters"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
-      "lastModificationDate": 1637096431924,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1652751956025,
       "contentHash": "6748815a5b45c4aeeda56819f41190e0",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
       "solcConfig": {
@@ -161,8 +161,8 @@
         "Ownable"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1637096431884,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1652751956041,
       "contentHash": "2adbd82f6d055a4751566d4671512b03",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
@@ -196,8 +196,8 @@
         "Context"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
-      "lastModificationDate": 1637096431917,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1652751959970,
       "contentHash": "e82621b83943f11c44988c60e83d6ebc",
       "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
       "solcConfig": {
@@ -233,8 +233,8 @@
         "IERC721"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol": {
-      "lastModificationDate": 1637096431918,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol": {
+      "lastModificationDate": 1652751959922,
       "contentHash": "370e7a48f316401b5063bcb604843e1b",
       "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol",
       "solcConfig": {
@@ -270,8 +270,8 @@
         "IERC721Metadata"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol": {
-      "lastModificationDate": 1637096431919,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol": {
+      "lastModificationDate": 1652751959923,
       "contentHash": "eaebc3874248c26f6ea0b13b9a140a94",
       "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol",
       "solcConfig": {
@@ -307,8 +307,8 @@
         "IERC721Enumerable"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
-      "lastModificationDate": 1637096431919,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1652751959923,
       "contentHash": "fad0b3f4424bdbb4b35467b29ea8d334",
       "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
       "solcConfig": {
@@ -342,8 +342,8 @@
         "IERC721Receiver"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/introspection/ERC165.sol": {
-      "lastModificationDate": 1637096431899,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/introspection/ERC165.sol": {
+      "lastModificationDate": 1652751956030,
       "contentHash": "08f854e2dd3c262845bba38c9b48e4e0",
       "sourceName": "@openzeppelin/contracts/introspection/ERC165.sol",
       "solcConfig": {
@@ -379,8 +379,8 @@
         "ERC165"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
-      "lastModificationDate": 1637096431938,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1652751956035,
       "contentHash": "e03e12206057e809eb76c5f681170c32",
       "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
       "solcConfig": {
@@ -414,8 +414,8 @@
         "SafeMath"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/utils/Address.sol": {
-      "lastModificationDate": 1637096431880,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1652751956041,
       "contentHash": "7aa46886ff5abe7515496208a5e2ce5a",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
       "solcConfig": {
@@ -449,8 +449,8 @@
         "Address"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/utils/EnumerableSet.sol": {
-      "lastModificationDate": 1637096431891,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/utils/EnumerableSet.sol": {
+      "lastModificationDate": 1652751956041,
       "contentHash": "db7b1afdb2c204e1e52100b79f0c847e",
       "sourceName": "@openzeppelin/contracts/utils/EnumerableSet.sol",
       "solcConfig": {
@@ -484,8 +484,8 @@
         "EnumerableSet"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/utils/EnumerableMap.sol": {
-      "lastModificationDate": 1637096431890,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/utils/EnumerableMap.sol": {
+      "lastModificationDate": 1652751956041,
       "contentHash": "b1bb8570824c668943149211d74d6c51",
       "sourceName": "@openzeppelin/contracts/utils/EnumerableMap.sol",
       "solcConfig": {
@@ -519,8 +519,8 @@
         "EnumerableMap"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
-      "lastModificationDate": 1637096431941,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1652751956042,
       "contentHash": "c86a31bacf868d392eda08a0eccc4735",
       "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
       "solcConfig": {
@@ -554,8 +554,8 @@
         "Strings"
       ]
     },
-    "/Users/claypalumbo/git/nft-maker/node_modules/@openzeppelin/contracts/introspection/IERC165.sol": {
-      "lastModificationDate": 1637096431916,
+    "/Users/claypalumbo/git/Apps/nft-maker/node_modules/@openzeppelin/contracts/introspection/IERC165.sol": {
+      "lastModificationDate": 1652751956033,
       "contentHash": "0d62a8380952235f135dae91590f90a3",
       "sourceName": "@openzeppelin/contracts/introspection/IERC165.sol",
       "solcConfig": {

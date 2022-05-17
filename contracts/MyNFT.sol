@@ -6,18 +6,17 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract CameronNFT is ERC721 {
+contract NewNFT is ERC721 {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    constructor() public ERC721("CameronNFT", "NFT") {}
+    constructor() public ERC721("NewNFT", "NFT") {}
 
     function mintNFT(address recipient, string memory tokenURI)
         public
         returns (uint256)
     {
         _tokenIds.increment();
-
         uint256 newItemId = _tokenIds.current();
         _mint(recipient, newItemId);
         _setTokenURI(newItemId, tokenURI);

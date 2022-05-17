@@ -1,16 +1,18 @@
 const { ethers } = require("hardhat");
 
-async function main() {
-    const MyNFT = await ethers.getContractFactory("CameronNFT");
-    
-    // Start deployment, returning a promise that resolves to a contract object
-    const myNFT = await MyNFT.deploy();
-    console.log("Contract deployed to address:", myNFT.address);
- }
+/**
+ * Deploys a new contract on ethereum's blockchain. To execute, run "npx hardhat run scripts/deploy.js --network ropsten"
+ */
+async function deployContract() {
+  try {
+    const contractFactory = await ethers.getContractFactory("NewNFT");
+    const myNftContract = await contractFactory.deploy();
+    console.log("Contract deployed to address:", myNftContract.address);
+  } catch ( err ) {
+    console.log("Contract failed to deploy: " + err);
+  } finally {
+    console.log("Deploy process completed.");
+  }
+}
  
- main()
-   .then(() => process.exit(0))
-   .catch(error => {
-     console.error(error);
-     process.exit(1);
-   });
+ deployContract();

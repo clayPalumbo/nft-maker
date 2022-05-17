@@ -1,40 +1,43 @@
 require('dotenv').config();
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
+const contract = require("../artifacts/contracts/MyNFT.sol/NewNFT.json"); 
+
 const API_URL = process.env.API_URL;
 const PUBLIC_KEY = process.env.RECIEVER_KEY;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
-const web3 = createAlchemyWeb3(API_URL);
 
-const contract = require("../artifacts/contracts/MyNFT.sol/CameronNFT.json"); 
-const contractAddress = "0x764d35453FBFCDe3cE7275f62897e1577657168C";
+const web3 = createAlchemyWeb3(API_URL);
+const contractAddress = "0xA8BfAE848053A4646F40cA49693c688e2fA55F69";
 const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
 
+/**
+ * Run using node scripts/mint-nft "your-nft-uri-goes-here"
+ * @param {string} tokenURI 
+ * @param {string} reciever 
+ */
 async function mintNFT(tokenURI, reciever) {
-    const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //get latest nonce
-  
-    //the transaction
-    const tx = {
+  try {
+    console.log("Minting NFT engaged: ", tokenURI);
+    const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest');
+    console.log("nounce created: ", nonce);
+    const rawTx = {
       'from': PUBLIC_KEY,
       'to': reciever,
       'nonce': nonce,
       'gas': 500000,
       'data': nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI()
     };
-  
-  
-    const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY);
-    signPromise.then((signedTx) => {
-  
-      web3.eth.sendSignedTransaction(signedTx.rawTransaction, function(err, hash) {
-        if (!err) {
-          console.log("The hash of your transaction is: ", hash, "\nCheck Alchemy's Mempool to view the status of your transaction!"); 
-        } else {
-          console.log("Something went wrong when submitting your transaction:", err)
-        }
-      });
-    }).catch((err) => {
-      console.log(" Promise failed:", err);
-    });
-  }
 
-  mintNFT("https://gateway.pinata.cloud/ipfs/QmPAjpWvS88MDX2czp6ez15rmCJ2iFvL3rs7DfyZTmWgZw", contractAddress);
+    const signedTx = await web3.eth.accounts.signTransaction(rawTx, PRIVATE_KEY);
+
+    console.log("Transaction has been signed");
+
+    const transactionDetails = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
+
+    console.log("Success! ", transactionDetails.transactionHash);
+  } catch(err) {
+    console.log("Minting failed: ", err);
+  }
+}
+
+mintNFT(process.argv[2], contractAddress);
