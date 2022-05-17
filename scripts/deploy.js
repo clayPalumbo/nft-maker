@@ -6,8 +6,8 @@ const { ethers } = require("hardhat");
  */
 async function deployContract() {
   try {
-    const contractFactory = await ethers.getContractFactory("NewNFT");
-    const myNftContract = await contractFactory.deploy();
+    const contract = await ethers.getContractFactory("NewNFT");
+    const myNftContract = await contract.deploy();
     console.log("Contract deployed to address:", myNftContract.address);
   } catch ( err ) {
     console.log("Contract failed to deploy: " + err);
