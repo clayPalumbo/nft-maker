@@ -1,7 +1,8 @@
 const { ethers } = require("hardhat");
 
 /**
- * Deploys a new contract on ethereum's blockchain. To execute, run "npx hardhat run scripts/deploy.js --network ropsten"
+ * Deploys a new contract on ethereum's blockchain. To execute, run: 
+ * "npx hardhat run scripts/deploy.js --network ropsten"
  */
 async function deployContract() {
   try {
