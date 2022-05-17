@@ -7,7 +7,9 @@ const PUBLIC_KEY = process.env.RECIEVER_KEY;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 const web3 = createAlchemyWeb3(API_URL);
-const contractAddress = "0xA8BfAE848053A4646F40cA49693c688e2fA55F69";
+
+// If you create a new contract update here
+const contractAddress = "0x840A664c0fEE4CCDDe2B65c79a8a7354c0EF533a";
 const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
 
 /**

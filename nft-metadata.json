@@ -1,9 +1,15 @@
 {
-    "attributes" : [ {
-      "trait_type" : "weight",
-      "value" : "Unknown"
-    }],
-    "description" : "This is fake josh at walmart",
-    "image" : "https://gateway.pinata.cloud/ipfs/QmPAjpWvS88MDX2czp6ez15rmCJ2iFvL3rs7DfyZTmWgZw",
-    "name" : "Altier's first form"
+  "name" : "Clay Palumbo",
+  "description" : "Someone who could be a key player for Abacus",
+  "attributes" : [ 
+      {
+        "trait_type" : "Profession",
+        "value" : "Software Engineer"
+      },
+      {
+        "trait_type": "Skills in question",
+        "value": "Asynchronos programming"
+      }
+  ],
+    "image" : "https://gateway.pinata.cloud/ipfs/QmWuuM7oZ8fAAVzSJ7V9JFnyBSxvUP3Lt5GBfwwPZJZj4D"
 }
