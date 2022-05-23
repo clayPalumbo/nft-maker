@@ -38,7 +38,7 @@ async function mintNFT(tokenURI, reciever) {
 
     console.log("Success! ", transactionDetails.transactionHash);
   } catch(err) {
-    console.log("Minting failed: ", err);
+    throw new Error("Minting failed: " + err);
   }
 }
 
