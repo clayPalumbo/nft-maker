@@ -10,7 +10,7 @@ async function deployContract() {
     const myNftContract = await contract.deploy();
     console.log("Contract deployed to address:", myNftContract.address);
   } catch ( err ) {
-    console.log("Contract failed to deploy: " + err);
+    throw new Error("Contract failed to deploy: " + err);
   } finally {
     console.log("Deploy process completed.");
   }

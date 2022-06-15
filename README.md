@@ -1,4 +1,4 @@
-# Mint Your NFT
+# Mint Your NFT (Ethereum Blockchain)
 
 You can see my NFT successfully ran here <https://ropsten.etherscan.io/tx/0xada0b6a5ed7e5d6bb59a18409413d9ca439e36df04a19ceefc65f14ec5f886a4>
 
@@ -13,7 +13,7 @@ You can see my NFT successfully ran here <https://ropsten.etherscan.io/tx/0xada0
 
 - Run `npm i` to install packages
 
-- I already have a contract deployed but if you would like to deploy one of your own run `npx hardhat run scripts/deploy.js --network ropsten` and update `contractAddress` in `scripts/mint-nft.js` with the new hash.
+- I already have a contract deployed but if you would like to deploy one of your own run `npx hardhat run scripts/deploy.js --network ${testnet/mainnet}` and update `contractAddress` in `scripts/mint-nft.js` with the new hash created.
 
 - Mint your NFT using `node scripts/mint-nft.js https://your-nft-metadata-url`
 
