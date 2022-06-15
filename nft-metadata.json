@@ -1,14 +1,14 @@
 {
   "name" : "Clay Palumbo",
-  "description" : "Someone interested in Abacus",
+  "description" : "Full Stack Cloud Engineer",
   "attributes" : [ 
       {
         "trait_type" : "Profession",
         "value" : "Software Engineer"
       },
       {
-        "trait_type": "Skills in question",
-        "value": "Asynchronos programming"
+        "trait_type": "Location",
+        "value": "Charlotte, NC"
       }
   ],
     "image" : "https://gateway.pinata.cloud/ipfs/QmWuuM7oZ8fAAVzSJ7V9JFnyBSxvUP3Lt5GBfwwPZJZj4D"
